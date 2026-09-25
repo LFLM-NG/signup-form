@@ -78,13 +78,13 @@ header {
 }
 
 header div {
-    margin-top: 7rem;
+    margin: 7rem 0 3rem;
     width: 69%;
-    font-weight: bold;
 }
 
-.signup-form {
-
+footer {
+    flex: 30;
+    box-shadow: inset 0px 1px 8px rgb(150, 150, 150);
 }
 
 footer button {
@@ -96,6 +96,7 @@ footer button {
     border: 0;
     border-radius: 5px;
 }
+
 
 footer p {
     margin-top: 2rem;
@@ -113,8 +114,40 @@ footer p {
     background-color: white;
 }
 
-footer {
-    flex: 30;
+#signup-form {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+    width: 90%;
+}
+
+#signup-form div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#signup-form div label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+#signup-form div input {
+    padding: 4px;
+    font-size: 1rem;
+    border: 2px solid #E5E7EB;
+    border-radius: 2px;
+}
+
+#signup-form div input:focus, #signup-form div input:focus-visible {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 1px 1px 4px black;
+}
+
+#signup-form div input:user-invalid {
+    border: 2px solid red;
 }
 
 header, footer {
