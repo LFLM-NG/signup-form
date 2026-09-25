@@ -22,13 +22,12 @@ body {
 }
 
 .sidebar {
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: 100%;
+    image-rendering: -webkit-optimize-contrast;
     position: relative;
     overflow: hidden;
     flex: 1 1 0;
-}
-
-.sidebar-background {
-    max-width: 40vw;
 }
 
 .logo {
