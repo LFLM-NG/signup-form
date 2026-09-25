@@ -11,27 +11,32 @@
 }
 
 body {
+    background-color: #222;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    font-family: 'Norse';
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 1.2rem;
 }
 
 .sidebar {
-    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: 100%;
+    background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
     image-rendering: -webkit-optimize-contrast;
     position: relative;
     overflow: hidden;
-    flex: 1 1 0;
+    flex: 1 0 30%;
 }
 
 .logo {
-    width: 15%;
+    width: 20%;
 }
 
 .banner {
@@ -44,17 +49,18 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    font-size: 3rem;
+    font-family: 'Norse', sans-serif;
+    font-size: 5rem;
     font-weight: bold;
 }
 
 .background-credits {
-    font-family: sans-serif;
+    font-size: 0.75rem;
     width: 100%;
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 1%;
 }
 
 .background-credits a {
@@ -62,5 +68,59 @@ body {
 }
 
 .form-page {
-    flex: 2 1 auto;
+    flex: 2.5 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 35;
+}
+
+header div {
+    margin-top: 7rem;
+    width: 69%;
+    font-weight: bold;
+}
+
+.signup-form {
+
+}
+
+footer button {
+    padding: 0.75rem 3rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #596D48;
+    border: 0;
+    border-radius: 5px;
+}
+
+footer p {
+    margin-top: 2rem;
+}
+
+.login {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-container {
+    flex: 35;
+    padding-top: 0.5rem;
+    background-color: white;
+}
+
+footer {
+    flex: 30;
+}
+
+header, footer {
+    background-color: #f0f0f0;
+}
+
+header, footer, .form-container {
+    padding-left: 2rem;
 }
